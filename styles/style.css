@@ -14,7 +14,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: 0.2s ease;
 }
 
@@ -28,17 +28,52 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+/* html::-webkit-scrollbar-track{
+    border-radius: 3rem;
+    background-color: transparent;
+} */
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: #4e5ba4;
+}
+
 body {
     background-color: var(--main-color);
     height: 200vh;
 }
 
-section{
+section {
     padding: 3.5rem 7%;
 
 }
 
-.btn{
+.heading {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+
+
+
+.btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 2rem 3.75rem;
@@ -47,6 +82,12 @@ section{
     color: #fff;
     background-color: var(--black-color);
 
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    /* font-size: 1.9rem; */
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
 
 .title {
@@ -68,28 +109,28 @@ section{
     padding: 0 7%;
     margin: 2rem 7%;
     border-radius: 30rem;
-    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
     position: sticky;
     top: 1rem;
     z-index: 1000;
 }
 
-.header .navbar a{
+.header .navbar a {
     margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--black-color);
     border-bottom: 0.1rem solid transparent;
-    
+
 }
 
 .header .navbar .active,
-.header .navbar a:hover{
+.header .navbar a:hover {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;
-     
+
 }
 
-.header .buttons button{
+.header .buttons button {
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -102,10 +143,9 @@ section{
 
 /*home start*/
 
-.home{
+.home {
     min-height: 100vh;
-    background: url(../images/home.jpg)
-    no-repeat;
+    background: url(../images/home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: -14.5rem;
@@ -114,22 +154,251 @@ section{
 
 }
 
-.home .content{
+.home .content {
     max-width: 60rem;
 
 }
 
-.home .content h3{
-    font-size: 6rem;
+.home .content h3 {
+    font-size: 4rem;
     color: black;
 }
 
-.home .content p{
-    font-size: 2rem;
+.home .content p {
+    font-size: 2.1rem;
     font-weight: 300;
     line-height: 1.8;
     padding: 1rem 0;
     color: #black;
 }
 
+
+.home img {
+    height: 50rem;
+    margin: 12.5rem 5rem;
+}
+
 /*home end*/
+
+/*hizmet start*/
+
+.hizmet .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    text-align: center;
+}
+
+.hizmet .box-container .box:hover {
+
+    box-shadow: 0px 0px 34px -2px rgba(0, 0, 0, 0.75);
+    background-color: rgb(223, 241, 254);
+}
+
+.hizmet .box-container .box img {
+    width: 45%;
+    object-fit: cover;
+    gap: 1.5rem;
+
+}
+
+.hizmet .box-container .box {
+    margin: 1rem;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    background-color: white;
+    min-height: 40rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-betweens;
+
+}
+
+.hizmet .box-container .box h3 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+.hizmet .box-container p {
+
+    /* border: 0.1rem solid blue; */
+    font-size: 1.5rem;
+    min-height: 12rem;
+    padding: 2rem;
+
+}
+
+.hizmet .box-container .box .btn {
+    position: relative;
+    top: 1rem;
+
+}
+
+/*hizmet end*/
+
+/*about start*/
+
+.about .row{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .img{
+    /* flex: 1 1 45rem; */
+    /* filter: grayscale(100%); */
+    width: 0.1rem;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+/*hizmet end*/
+
+/*iletisim start*/
+
+.contact{
+    margin: auto;
+}
+
+.contact form{
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    width: 50%;
+    padding: 1rem;
+    
+}
+
+.contact form .inputBox{
+    
+    flex: 1 1 45rem;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    
+}
+
+.contact form h3{
+    font-size: 3.5rem;
+    color: white;
+}
+
+/*iletisim end*/
+
+
+/*footer start*/
+
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input{
+    width: 30rem;
+}
+
+.footer .search .btn-primary{
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+
+.footer .share{
+    padding: 2rem 0;
+
+}
+
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: white;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a{
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: white;
+    font-size: 1rem;
+    border: var(--border);
+}
+
+.footer .links a.active,
+.footer .links a:hover{
+    background-color: var(--black-color);
+    opacity: 0.7;
+}
+
+.footer .copyright{
+    color: white;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+/*footer end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Grid yapısı öğrenilecek */
