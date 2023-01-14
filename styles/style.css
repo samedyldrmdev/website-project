@@ -97,6 +97,39 @@ section {
 
 /*header start*/
 
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    transform: scaley(0);
+}
+
+.header .search-form.active{
+    transform: scaley(1);
+}
+
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .search-form input{
+    width: 90%;
+}
+
+.header .search-form{
+    padding: 0 0 0 2rem;
+}
+
 .header .logo img {
     width: 10rem;
 }
@@ -136,6 +169,78 @@ section {
     margin-left: 2rem;
     background-color: transparent;
 }
+
+.header .cart-items-container{
+    position: absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    right: -100%;
+}
+
+.header .cart-items-container.active{
+    position: absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    right: 7%;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.header .cart-items-container .cart-item:hover{
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 1.7rem;
+    color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black-color);
+
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+
+
+.header #menu-btn{
+    display: none;
+}
+
+
+
 
 /*header end*/
 
@@ -263,6 +368,7 @@ section {
 }
 
 .about .row .content h3{
+    padding: 4rem 0;
     font-size: 3rem;
     color: white;
 }
@@ -270,44 +376,12 @@ section {
 .about .row .content p{
     font-size: 1.6rem;
     color: white;
-    padding: 1rem 0;
+    padding: 3rem 0;
     line-height: 1.8;
 }
 
 
 /*hizmet end*/
-
-/*iletisim start*/
-
-.contact{
-    margin: auto;
-}
-
-.contact form{
-    background-color: var(--black-color);
-    flex-wrap: wrap;
-    gap: 1rem;
-    text-align: center;
-    width: 50%;
-    padding: 1rem;
-    
-}
-
-.contact form .inputBox{
-    
-    flex: 1 1 45rem;
-    padding: 2rem 2rem;
-    margin: 1rem;
-    
-}
-
-.contact form h3{
-    font-size: 3.5rem;
-    color: white;
-}
-
-/*iletisim end*/
-
 
 /*footer start*/
 
@@ -378,6 +452,9 @@ section {
     font-size: 1.4rem;
 }
 
+.footer .copyright span{
+    color: wheat;
+}
 
 
 
@@ -387,6 +464,59 @@ section {
 
 
 
+/*responsive start*/
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo img{
+        height: 7rem;
+        width: 7rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .hizmet .box-container .box .box-head h1{
+        font-size: 3.4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 95%;
+        background-color: white;
+        height: calc(100vh - 9rem);
+        width: 30rem;
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+        /* right: -100%; */
+    }
+
+    .header .navbar.active{
+        right: 3rem;
+    }
+
+    .header .navbar a{
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
+/*responsive end*/
 
 
 

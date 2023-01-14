@@ -18,7 +18,7 @@
         <a href="#" class="logo">
             <img src="/images/logo.png" alt="logo">
         </a>
-        <nav class="navbar">
+        <nav class="navbar active">
             <a href="#" class="active">Anasayfa</a>
             <a href="#" class="">Hizmetlerimiz</a>
             <a href="#" class="">Referanslarımız</a>
@@ -27,16 +27,58 @@
         </nav>
 
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
-            <button>
+            <button id="shopping-btn">
                 <i class="fas fa-shopping-cart"></i>
             </button>
-            <button>
+            <button id="menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Hemen Ara">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/hizmet1.png" alt="">
+                <div class="content">
+                    <h3>Logo Tasarım</h3>
+                    <div class="price">₺400</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/hizmet2.png" alt="">
+                <div class="content">
+                    <h3>Web Tasarım</h3>
+                    <div class="price">₺400</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/hizmet3.png" alt="">
+                <div class="content">
+                    <h3>Kurumsal Kimlik</h3>
+                    <div class="price">₺400</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/hizmet4.png" alt="">
+                <div class="content">
+                    <h3>Sosyal Medya Tasarım</h3>
+                    <div class="price">₺400</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Kontrol Et</a>
+        </div>
+
     </header>
     <!-- header section end -->
 
@@ -116,7 +158,7 @@
 
     <!-- about section start -->
     <section class="about">
-        <h1 class="heading">HAKKIMIZDA</h1>
+        <h1 class="heading">LOGO TASARIM</h1>
         <div class="row">
             <div class="image">
                 <img src="images/about.png" alt="Hakkımızda">
@@ -133,34 +175,11 @@
     </section>
     <!-- about section end -->
 
-    <!-- form section start -->
-
-    <section class="contact">
-        <form>
-            <h3>BİZİMLE İLETİŞİME GEÇ!</h3>
-            <div class="inputBox">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="İsim Soyisim">
-            </div>
-            <div class="inputBox">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="E-mail">
-            </div>
-            <div class="inputBox">
-                <i class="fas fa-phone"></i>
-                <input type="text" placeholder="Telefon">
-            </div>
-            <input type="submit" class="btn" value="İletişime Geç!">
-        </form>
-
-    </section>
-    <!-- form section end -->
-
     <!-- footer section start -->
 
     <section class="footer">
         <div class="search">
-            <input type="text" class="search-input" placeholder="Ara"/>
+            <input type="text" class="search-input" placeholder="Ara" />
             <button class="btn btn-primary">Search</button>
         </div>
         <div class="share">
@@ -179,14 +198,14 @@
             <a href="#" class="">İletişim</a>
         </div>
         <div class="copyright">
-            <p>Copyright © 2022 | Doktor Logo | Tüm Hakları Saklıdır.</p>
+            Copyright © 2022 | <span> Doktor Logo </span>| Tüm Hakları Saklıdır.
         </div>
 
     </section>
 
     <!-- footer section end -->
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
