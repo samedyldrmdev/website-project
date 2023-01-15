@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
     --main-color: #5b6abf;
@@ -71,8 +71,6 @@ section {
 }
 
 
-
-
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -109,6 +107,14 @@ section {
     border-radius: 3rem;
     box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
     transform: scaley(0);
+}
+
+.header h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header span{
+    color: var(--main-color);
 }
 
 .header .search-form.active {
@@ -152,7 +158,8 @@ section {
     margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--black-color);
-    border-bottom: 0.1rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    border-radius: 0.2rem;
 
 }
 
@@ -375,9 +382,6 @@ section {
     display: inline-block;
 }
 
-.surec .baslik1:hover{
-    
-}
 
 /*surec end*/
 
