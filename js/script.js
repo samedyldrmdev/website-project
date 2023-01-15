@@ -47,55 +47,41 @@ menuBtn.addEventListener("click", function(){
 })
 
 
+//süreçler//
+const surecler = document.querySelector("#surecler");
 
-        // function removeelement(){
-        //     document.getElementById("imgbox1").style.display="none";
-        // }
-        // function changeVisibility(){
-        //     document.getElementById("imgbox2").style.visibility="hidden";
-        // }
-        // function reset(){
-        //     document.getElementById("imgbox1").style.display="inline";
-        //     document.getElementById("imgbox2").style.visibility="visible";
 
-        // }
+const surecb1 = document.querySelector("#surecb1");
+const surec1 = document.querySelector("#surec1");
+surecb1.addEventListener("click", function(){
+    surec1.classList.toggle("active")
+} )
 
-function showp1(){
-    document.getElementById("surec1").style.display="inline-block";
-    document.getElementsById("surec2").style.display="none";
-    document.getElementsById("surec3").style.display="none";
-    document.getElementsById("surec4").style.display="none";
-    document.getElementsById("surec5").style.display="none";
-}
 
-function showp2(){
-    document.getElementsById("surec2").style.display="inline-block";
-    document.getElementById("surec1").style.display="none";
-    document.getElementsById("surec3").style.display="none";
-    document.getElementsById("surec4").style.display="none";
-    document.getElementsById("surec5").style.display="none";
-}
+const surecb2 = document.querySelector("#surecb2");
+const surec2 = document.querySelector("#surec2");
+surecb2.addEventListener("click", function(){
+    surec2.classList.toggle("active")
+} )
 
-function showp3(){
-    document.getElementById("surec1").style.display="none";
-    document.getElementsById("surec2").style.display="none";
-    document.getElementsById("surec3").style.display="inline-block";
-    document.getElementsById("surec4").style.display="none";
-    document.getElementsById("surec5").style.display="none";
-}
+const surecb3 = document.querySelector("#surecb3");
+const surec3 = document.querySelector("#surec3");
+surecb3.addEventListener("click", function(){
+    surec3.classList.toggle("active")
+} )
 
-function showp4(){
-    document.getElementById("surec1").style.display="none";
-    document.getElementsById("surec2").style.display="none";
-    document.getElementsById("surec3").style.display="none";
-    document.getElementsById("surec4").style.display="inline-block";
-    document.getElementsById("surec5").style.display="none";
-}
 
-function showp5(){
-    document.getElementById("surec1").style.display="none";
-    document.getElementsById("surec2").style.display="none";
-    document.getElementsById("surec3").style.display="none";
-    document.getElementsById("surec4").style.display="none";
-    document.getElementsById("surec5").style.display="inline-block";
-}
+const surecb4 = document.querySelector("#surecb4");
+const surec4 = document.querySelector("#surec4");
+surecb4.addEventListener("click", function(){
+    surec4.classList.toggle("active")
+} )
+
+
+const surecb5 = document.querySelector("#surecb5");
+const surec5 = document.querySelector("#surec5");
+surecb5.addEventListener("click", function(){
+    surec5.classList.toggle("active")
+} )
+
+
