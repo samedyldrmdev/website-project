@@ -62,7 +62,7 @@ section {
 
 }
 
-.search-input{
+.search-input {
     font-size: 1.6rem;
     color: var(--black-color);
     padding: 1rem;
@@ -97,7 +97,7 @@ section {
 
 /*header start*/
 
-.header .search-form{
+.header .search-form {
     position: absolute;
     top: 115%;
     right: 7%;
@@ -111,22 +111,22 @@ section {
     transform: scaley(0);
 }
 
-.header .search-form.active{
+.header .search-form.active {
     transform: scaley(1);
 }
 
-.header .search-form i{
+.header .search-form i {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
     color: var(--black-color);
 }
 
-.header .search-form input{
+.header .search-form input {
     width: 90%;
 }
 
-.header .search-form{
+.header .search-form {
     padding: 0 0 0 2rem;
 }
 
@@ -170,7 +170,7 @@ section {
     background-color: transparent;
 }
 
-.header .cart-items-container{
+.header .cart-items-container {
     position: absolute;
     top: 95%;
     height: calc(100vh - 9rem);
@@ -180,7 +180,7 @@ section {
     right: -100%;
 }
 
-.header .cart-items-container.active{
+.header .cart-items-container.active {
     position: absolute;
     top: 95%;
     height: calc(100vh - 9rem);
@@ -190,7 +190,7 @@ section {
     right: 7%;
 }
 
-.header .cart-items-container .cart-item{
+.header .cart-items-container .cart-item {
     position: relative;
     display: flex;
     align-items: center;
@@ -198,28 +198,28 @@ section {
     padding: 1.5rem;
 }
 
-.header .cart-items-container .cart-item:hover{
+.header .cart-items-container .cart-item:hover {
     box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
 
-.header .cart-items-container .cart-item .content h3{
+.header .cart-items-container .cart-item .content h3 {
     font-size: 1.7rem;
     color: var(--black-color);
     padding-bottom: 0.5rem;
 }
 
-.header .cart-items-container .cart-item .content .price{
+.header .cart-items-container .cart-item .content .price {
     font-size: 1.5rem;
     color: var(--black-color);
 }
 
-.header .cart-items-container .btn{
+.header .cart-items-container .btn {
     width: 100%;
     text-align: center;
     border-radius: unset;
 }
 
-.header .cart-items-container .cart-item .fa-times{
+.header .cart-items-container .cart-item .fa-times {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -229,13 +229,13 @@ section {
 
 }
 
-.header .cart-items-container .cart-item img{
+.header .cart-items-container .cart-item img {
     height: 7rem;
 }
 
 
 
-.header #menu-btn{
+.header #menu-btn {
     display: none;
 }
 
@@ -346,34 +346,34 @@ section {
 
 /*about start*/
 
-.about .row{
+.about .row {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 2rem;
 
 }
 
-.about .row .image{
+.about .row .image {
     flex: 1 1 45rem;
 }
 
-.about .row .img{
+.about .row .img {
     /* flex: 1 1 45rem; */
     /* filter: grayscale(100%); */
     width: 0.1rem;
 }
 
-.about .row .content{
+.about .row .content {
     flex: 1 1 45rem;
 }
 
-.about .row .content h3{
+.about .row .content h3 {
     padding: 4rem 0;
     font-size: 3rem;
     color: white;
 }
 
-.about .row .content p{
+.about .row .content p {
     font-size: 1.6rem;
     color: white;
     padding: 3rem 0;
@@ -385,32 +385,32 @@ section {
 
 /*footer start*/
 
-.footer{
+.footer {
     background-color: var(--black-color);
     text-align: center;
 }
 
-.footer .search{
+.footer .search {
     display: flex;
     justify-content: center;
 }
 
-.footer .search .search-input{
+.footer .search .search-input {
     width: 30rem;
 }
 
-.footer .search .btn-primary{
+.footer .search .btn-primary {
     background-color: var(--main-color);
     padding: 1rem 2rem;
     margin-left: 1rem;
 }
 
-.footer .share{
+.footer .share {
     padding: 2rem 0;
 
 }
 
-.footer .share a{
+.footer .share a {
     width: 5rem;
     height: 5rem;
     line-height: 5rem;
@@ -421,18 +421,18 @@ section {
     margin: 3px;
 }
 
-.footer .share a:hover{
+.footer .share a:hover {
     background-color: var(--main-color);
 }
 
-.footer .links{
+.footer .links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.footer .links a{
+.footer .links a {
     background-color: var(--main-color);
     padding: 0.7rem 2rem;
     color: white;
@@ -441,49 +441,88 @@ section {
 }
 
 .footer .links a.active,
-.footer .links a:hover{
+.footer .links a:hover {
     background-color: var(--black-color);
     opacity: 0.7;
 }
 
-.footer .copyright{
+.footer .copyright {
     color: white;
     padding: 3rem 0;
     font-size: 1.4rem;
 }
 
-.footer .copyright span{
+.footer .copyright span {
     color: wheat;
 }
 
-
-
-
-
 /*footer end*/
 
+/*social start*/
+
+.social {
+    background-color: var(--main-color);
+    border-radius: 30rem;
+    position: fixed;
+    top: 33%;
+    right: 0rem;
+    box-shadow: 0px 0px 34px -2px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+}
+
+.social a {
+    width: 3rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.social a:hover {
+    font-size: 2.3rem;
+    opacity: 1;
+}
+
+/*social end*/
+
+
+/* background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 7%;
+margin: 2rem 7%;
+border-radius: 30rem;
+box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+position: sticky;
+top: 1rem;
+z-index: 1000; */
 
 
 /*responsive start*/
-@media (max-width: 991px){
-    html{
+@media (max-width: 991px) {
+    html {
         font-size: 55%;
     }
 
-    .header{
+    .header {
         padding: 1.5rem 2rem;
     }
 
-    .header .logo img{
+    .header .logo img {
         height: 7rem;
         width: 7rem;
     }
 
-    section{
+    section {
         padding: 2rem;
     }
 
-    .hizmet .box-container .box .box-head h1{
+    .hizmet .box-container .box .box-head h1 {
         font-size: 3.4rem;
     }
 
@@ -494,7 +533,7 @@ section {
         display: inline-block;
     }
 
-    .header .navbar{
+    .header .navbar {
         position: absolute;
         top: 95%;
         background-color: white;
@@ -505,11 +544,11 @@ section {
         right: -100%;
     }
 
-    .header .navbar.active{
+    .header .navbar.active {
         right: 3rem;
     }
 
-    .header .navbar a{
+    .header .navbar a {
         color: var(--black-color);
         display: block;
         margin: 1.5rem;
@@ -520,11 +559,12 @@ section {
 
 
 @media (max-width: 576px) {
-    html{
-        font-size: 50%; 
+    html {
+        font-size: 50%;
     }
 
 }
+
 /*responsive end*/
 
 
