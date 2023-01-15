@@ -48,40 +48,54 @@ menuBtn.addEventListener("click", function(){
 
 
 //süreçler//
-const surecler = document.querySelector("#surecler");
+// const surecler = document.querySelector("#surecler");
 
+
+// const surecb1 = document.querySelector("#surecb1");
+// const surec1 = document.querySelector("#surec1");
+// surecb1.addEventListener("click", function(){
+//     surec1.classList.toggle("active")
+// } )
+
+
+// const surecb2 = document.querySelector("#surecb2");
+// const surec2 = document.querySelector("#surec2");
+// surecb2.addEventListener("click", function(){
+//     surec2.classList.toggle("active")
+// } )
+
+// const surecb3 = document.querySelector("#surecb3");
+// const surec3 = document.querySelector("#surec3");
+// surecb3.addEventListener("click", function(){
+//     surec3.classList.toggle("active")
+// } )
+
+
+// const surecb4 = document.querySelector("#surecb4");
+// const surec4 = document.querySelector("#surec4");
+// surecb4.addEventListener("click", function(){
+//     surec4.classList.toggle("active")
+// } )
+
+
+// const surecb5 = document.querySelector("#surecb5");
+// const surec5 = document.querySelector("#surec5");
+// surecb5.addEventListener("click", function(){
+//     surec5.classList.toggle("active")
+// } )
 
 const surecb1 = document.querySelector("#surecb1");
 const surec1 = document.querySelector("#surec1");
 surecb1.addEventListener("click", function(){
+    const allSurecs = document.querySelectorAll(".surec");
+    allSurecs.forEach(element => element.classList.remove("active"));
     surec1.classList.toggle("active")
-} )
-
+});
 
 const surecb2 = document.querySelector("#surecb2");
 const surec2 = document.querySelector("#surec2");
 surecb2.addEventListener("click", function(){
-    surec2.classList.toggle("active")
-} )
-
-const surecb3 = document.querySelector("#surecb3");
-const surec3 = document.querySelector("#surec3");
-surecb3.addEventListener("click", function(){
-    surec3.classList.toggle("active")
-} )
-
-
-const surecb4 = document.querySelector("#surecb4");
-const surec4 = document.querySelector("#surec4");
-surecb4.addEventListener("click", function(){
-    surec4.classList.toggle("active")
-} )
-
-
-const surecb5 = document.querySelector("#surecb5");
-const surec5 = document.querySelector("#surec5");
-surecb5.addEventListener("click", function(){
-    surec5.classList.toggle("active")
-} )
-
-
+    const allSurecs = document.querySelectorAll(".surec");
+    allSurecs.forEach(element => element.classList.remove("active"));
+    surec1.classList.toggle("active")
+});
