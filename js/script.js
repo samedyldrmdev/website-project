@@ -84,18 +84,35 @@ menuBtn.addEventListener("click", function(){
 //     surec5.classList.toggle("active")
 // } )
 
-const surecb1 = document.querySelector("#surecb1");
-const surec1 = document.querySelector("#surec1");
-surecb1.addEventListener("click", function(){
-    const allSurecs = document.querySelectorAll(".surec");
-    allSurecs.forEach(element => element.classList.remove("active"));
-    surec1.classList.toggle("active")
-});
+// const surecb1 = document.querySelector("#surecb1");
+// const surec1 = document.querySelector("#surec1");
+// surecb1.addEventListener("click", function(){
+//     const allSurecs = document.querySelectorAll(".surec");
+//     allSurecs.forEach(element => element.classList.remove("active"));
+//     surec1.classList.toggle("active")
+// });
 
-const surecb2 = document.querySelector("#surecb2");
-const surec2 = document.querySelector("#surec2");
-surecb2.addEventListener("click", function(){
-    const allSurecs = document.querySelectorAll(".surec");
-    allSurecs.forEach(element => element.classList.remove("active"));
-    surec1.classList.toggle("active")
+// const surecb2 = document.querySelector("#surecb2");
+// const surec2 = document.querySelector("#surec2");
+// surecb2.addEventListener("click", function(){
+//     const allSurecs = document.querySelectorAll(".surec");
+//     allSurecs.forEach(element => element.classList.remove("active"));
+//     surec1.classList.toggle("active")
+// });
+
+
+// tıklama vs //
+
+const sections = document.querySelectorAll("div[id^='section']");
+const headings = document.querySelectorAll("h3[id^='surecb']");
+
+headings.forEach(heading => {
+  heading.addEventListener("click", e => {
+    const id = e.target.getAttribute("id");
+    const targetSection = document.getElementById(id.replace("surecb","section"));
+    sections.forEach(section => {
+      section.style.display = "none";
+    });
+    targetSection.style.display = "block";
+  });
 });
