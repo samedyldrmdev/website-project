@@ -167,6 +167,7 @@ section {
 .header .navbar a:hover {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;
+    color: var(--main-color)
 
 }
 
@@ -258,27 +259,14 @@ section {
 .header .hizmetlerimiz  a{
     display: block;
     list-style-type: none;
-    padding: 1rem 0;
-}
-
-.header a:hover{
-    /* background-color: var(--main-color); */
-    /* color: var(--main-color) */
-}
-
-.navbar a:hover + .hizmetlerimiz,
-.navbar .hizmetlerimiz:hover{
-    display: block;
+    /* padding: 2rem 0; */
 }
 
 
-
-
-/*.navbar a:hover + .hizmetlerimiz,  hizmetlerimiz üzerine geldiğinde */
-/*.navbar .hizmetlerimiz:hover { /* veya liste üzerinde gezindiğinde */
-  /*display: block; /* görünür hale getir */
-
-
+.navbar a:hover + .hizmetlerimiz, /*hizmetlerimiz üzerine geldiğinde*/
+.navbar .hizmetlerimiz:hover{ /* veya liste üzerinde gezindiğinde */
+    display: block; /* görünür hale getir */
+}
 
 
 /*header end*/
