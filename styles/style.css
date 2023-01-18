@@ -257,21 +257,23 @@ section {
     padding: 1rem;
 }
 
-.header .hizmetlerimiz  li{
+.header .hizmetlerimiz  a{
+    display: block;
     list-style-type: none;
     padding: 0.5rem 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-.hiz:hover ~ .hizmetlerimiz{
+.navbar a:hover + .hizmetlerimiz,
+.navbar .hizmetlerimiz:hover{
     display: block;
 }
 
 
-.navbar a:hover + .hizmetlerimiz, /* hizmetlerimiz üzerine geldiğinde */
-.navbar .hizmetlerimiz:hover { /* veya liste üzerinde gezindiğinde */
-  display: block; /* görünür hale getir */
-}
+/*.navbar a:hover + .hizmetlerimiz,  hizmetlerimiz üzerine geldiğinde */
+/*.navbar .hizmetlerimiz:hover { /* veya liste üzerinde gezindiğinde */
+  /*display: block; /* görünür hale getir */
+
 
 
 
