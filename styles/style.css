@@ -33,11 +33,6 @@ html::-webkit-scrollbar {
     background-color: white;
 }
 
-/* html::-webkit-scrollbar-track{
-    border-radius: 3rem;
-    background-color: transparent;
-} */
-
 html::-webkit-scrollbar-thumb {
     border-radius: 3rem;
     background-color: #4e5ba4;
@@ -138,6 +133,7 @@ section {
 
 .header .logo img {
     width: 10rem;
+    fill: var(--main-color);
 }
 
 .header {
@@ -168,7 +164,6 @@ section {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;
     color: var(--main-color)
-
 }
 
 .header .buttons button {
@@ -252,7 +247,7 @@ section {
     display: none;
 }
 
-.header .hizmetlerimiz{
+.header .hizmetlerimiz {
     display: none;
     background-color: white;
     position: absolute;
@@ -263,15 +258,21 @@ section {
     margin-left: 5rem;
 }
 
-.header .hizmetlerimiz  a{
+.header .hizmetlerimiz a {
     display: block;
+    padding: 1.2rem 0;
     list-style-type: none;
+    padding-bottom: none;
+    border-bottom: none;
     /* padding: 2rem 0; */
 }
 
-.navbar a:hover + .hizmetlerimiz, /*hizmetlerimiz üzerine geldiğinde*/
-.navbar .hizmetlerimiz:hover{ /* veya liste üzerinde gezindiğinde */
-    display: block;  /* görünür hale getir */
+.navbar a:hover+.hizmetlerimiz,
+/*hizmetlerimiz üzerine geldiğinde*/
+.navbar .hizmetlerimiz:hover {
+    /* veya liste üzerinde gezindiğinde */
+    display: block;
+    /* görünür hale getir */
 }
 
 /*header end*/
@@ -464,6 +465,7 @@ section {
 .footer {
     background-color: var(--black-color);
     text-align: center;
+    /* background: ; */
 }
 
 .footer .search {
@@ -482,7 +484,7 @@ section {
     /* height: 6rem; */
 }
 
-.footer .search .btn-primary:hover{
+.footer .search .btn-primary:hover {
     background-color: white;
     color: var(--main-color)
 }
@@ -542,13 +544,18 @@ section {
 
 /*social start*/
 
-.social div { 
+.social {
+    background-color: transparent;
+    /* background: 100vh; */
+}
+
+.social {
+    background-color: transparent;
     border-radius: 30rem;
     position: fixed;
     top: 33%;
     right: 1rem;
     box-shadow: 0px 0px 34px -2px rgba(65, 65, 65, 0.75);
-    /* justify-content: space-evenly; */
 }
 
 .social a {
@@ -560,7 +567,7 @@ section {
     padding: 0 0.5rem;
     margin: 0.5rem;
     align-items: center;
-    opacity: 0,5;
+    opacity: 0, 5;
 }
 
 .social a:hover {

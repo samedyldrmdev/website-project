@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="/images/logo.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -17,12 +17,19 @@
     <!-- header section start -->
     <header class="header">
         <a href="#" class="logo">
-            <img src="/images/logo.png" alt="logo">
+            <img id="logo" src="/images/logo.svg" alt="logo">
         </a>
         <!-- <h1>"Size bir <span>logo</span> yazıyorum!"</h1>  -->
         <nav class="navbar">
             <a href="/index.html" class="">Anasayfa</a>
-            <a href="/hizmetlerimiz.html" class="">Hizmetlerimiz</a>
+            <a href="/hizmetlerimiz.html">Hizmetlerimiz</a>
+            <div class="hizmetlerimiz">
+                    <a href="#">Logo Tasarım</a></li>
+                    <a href="#">Web Tasarım</a>
+                    <a href="#">Kurumsal Kimlik</a>
+                    <a href="#">Banner Tasarım</a></li>
+                    <a href="#">Sosyal Medya Tasarımları</a>
+            </div>
             <a href="/referanslarimiz.html" class="">Referanslarımız</a>
             <a href="/hakkimizda.html" class="active">Hakkımızda</a>
             <a href="/iletisim.html" class="">İletişim</a>
@@ -161,31 +168,47 @@
     <!-- surec section start -->
     <section class="surec">
         <h1 class="heading">SÜREÇ NASIL İŞLİYOR?</h1>
-        <div class="baslik" id="surecler">
-            <h3 id="surecb1" onclick="showp1()">Paketinizi Seçin</h3>
-            <h3 id="surecb2" onclick="showp2()">Brief Gönderin</h3>
-            <h3 id="surecb3" onclick="showp3()">Revize işlemleri</h3>
-            <h3 id="surecb4" onclick="showp4()">Ne Kadar Sürer?</h3>
-            <h3 id="surecb5" onclick="showp5()">Dosyalarınızı Alın</h3>
+        <div class="baslik">
+            <h3 id="surecb1">Paketinizi Seçin</h3>
+            <h3 id="surecb2">Brief Gönderin</h3>
+            <h3 id="surecb3">Revize işlemleri</h3>
+            <h3 id="surecb4">Ne Kadar Sürer?</h3>
+            <h3 id="surecb5">Dosyalarınızı Alın</h3>
         </div>
+        <div class="paragraf">
 
-        <div class="surecler">
-            <p class="surec1" id="surec1">Doktor Logo olarak, logo tasarım ihtiyaçlarının bütçe ve taleple eşdeğer
-                olarak
-                değiştiğini gözlemlediğimizden sizler için logo tasarımında en çok tercih edilen 3 seçenekte paketler
-                oluşturduk ve size sadece bu seçeneklerden birini seçerek sürece başlamak kaldı!</p>
-            <p class="surec2" id="surec2">Logo tasarımınızdan beklentinizi anlayabilmek adına bize basit bir şekilde
-                isteklerinizi
-                belirtmeniz yeterli!</p>
-            <p class="surec3" id="surec3">Revize işlemlerinde seçtiğiniz paket içeriğindeki sayı kadar revize işlemi
-                sağlanmaktadır.
-                Fakat bu sayıda esneme payımız oldukça fazladır.</p>
-            <p class="surec4" id="surec4">Seçilen pakete göre minumum 24 saat maximum 3 günde ilk sunumlar yapılır.
-                Tasarımlar
-                üzerindeki revize talepleriniz ve geri bildirim hızınıza göre süreç de gün sayısı fazlalaşır.</p>
-            <p class="surec5" id="surec5">Onaylanan logo tasarım çalışması paket içeriğinizde belirtilen standartlarda
-                bir paket
-                haline getirilir ve tarafınıza teslim edilir.</p>
+            <div id="section1">
+                <i class="fas fa-box-open"></i>
+                <p>Doktor Logo olarak, logo tasarım ihtiyaçlarının bütçe ve taleple eşdeğer
+                    olarak
+                    değiştiğini gözlemlediğimizden sizler için logo tasarımında en çok tercih edilen 3 seçenekte
+                    paketler
+                    oluşturduk ve size sadece bu seçeneklerden birini seçerek sürece başlamak kaldı!</p>
+            </div>
+            <div id="section2">
+                <i class="fas fa-box-open"></i>
+                <p>Logo tasarımınızdan beklentinizi anlayabilmek adına bize basit bir şekilde
+                    isteklerinizi
+                    belirtmeniz yeterli!</p>
+            </div>
+            <div id="section3">
+                <i class="fas fa-box-open"></i>
+                <p>Revize işlemlerinde seçtiğiniz paket içeriğindeki sayı kadar revize işlemi
+                    sağlanmaktadır.
+                    Fakat bu sayıda esneme payımız oldukça fazladır.</p>
+            </div>
+            <div id="section4">
+                <i class="fas fa-box-open"></i>
+                <p>Seçilen pakete göre minumum 24 saat maximum 3 günde ilk sunumlar yapılır.
+                    Tasarımlar
+                    üzerindeki revize talepleriniz ve geri bildirim hızınıza göre süreç de gün sayısı fazlalaşır.</p>
+            </div>
+            <div id="section5">
+                <i class="fas fa-box-open"></i>
+                <p>Onaylanan logo tasarım çalışması paket içeriğinizde belirtilen standartlarda
+                    bir paket
+                    haline getirilir ve tarafınıza teslim edilir.</p>
+            </div>
         </div>
     </section>
 
@@ -204,7 +227,8 @@
                 <h3>Logo Tasarım</h3>
                 <p> Doktor Logo, tasarım alanında profesyonel bir hizmet sunuyor. Kurumsal kimlik ve logo tasarımı gibi
                     önemli alanlarda uzman ekibimizle müşterilerimize en iyi hizmeti veriyoruz. Mükemmel sonuçlar için
-                    tasarım sürecinde müşterilerimizle yakın işbirliği içinde çalışıyoruz. <br> Bizimle çalıştığınızda, güçlü
+                    tasarım sürecinde müşterilerimizle yakın işbirliği içinde çalışıyoruz. <br> Bizimle çalıştığınızda,
+                    güçlü
                     bir marka imajına sahip olmanın yanı sıra, tasarımınızın size ve işinizin ihtiyacına tam olarak
                     uygun olmasını da sağlıyoruz. Doktor Logo, sizin için en iyi sonucu elde etmeniz için burada.</p>
                 <a href="" class="btn">Satın Al! &nbsp;&nbsp;<i class="fas fa-cart-plus"></i></a>
@@ -217,8 +241,8 @@
 
     <section class="footer">
         <div class="search">
-            <input type="text" class="search-input" placeholder="Ara" />
-            <button class="btn btn-primary">Search</button>
+            <input type="text" class="search-input" placeholder="Ne bilmek istiyorsun?">
+            <a href="#" class="btn btn-primary">Ara!</a>
         </div>
         <div class="share">
             <a href="#" class="fab fa-instagram"></a>
@@ -236,7 +260,7 @@
             <a href="/iletisim.html" class="">İletişim</a>
         </div>
         <div class="copyright">
-            Copyright © 2022 | <span> Samet YILDIRIM </span>| Tüm Hakları Saklıdır.
+            Copyright © 2023 | <span> Samet YILDIRIM </span>| Tüm Hakları Saklıdır.
         </div>
 
     </section>
@@ -245,16 +269,16 @@
 
     <!-- social section start -->
 
-    <section class="social">
-        <div>
-            <a href="https://www.instagram.com/doktorlogo" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/company/doktorlogo/" class="fab fa-linkedin"></a>
-            <a href="https://www.tiktok.com/@doktorlogo" class="fab fa-tiktok"></a>
-            <a href="https://www.facebook.com/doktorlogoo" class="fab fa-facebook"></a>
-            <a href="https://twitter.com/baskomiserbaki" class="fab fa-twitter"></a>
-            <a href="https://www.behance.net/sametyildirim1" class="fab fa-behance"></a>
+    
+        <div class="social">
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-tiktok"></a>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-behance"></a>
         </div>
-    </section>
+
 
     <!-- social section end -->
 
