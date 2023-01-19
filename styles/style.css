@@ -178,6 +178,13 @@ section {
     background-color: transparent;
 }
 
+.header .buttons button:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+    transform: rotate(-20deg);
+}
+
 .header .cart-items-container {
     position: absolute;
     top: 95%;
@@ -262,15 +269,12 @@ section {
     /* padding: 2rem 0; */
 }
 
-
 .navbar a:hover + .hizmetlerimiz, /*hizmetlerimiz üzerine geldiğinde*/
 .navbar .hizmetlerimiz:hover{ /* veya liste üzerinde gezindiğinde */
-    display: block; /* görünür hale getir */
+    display: block;  /* görünür hale getir */
 }
 
-
 /*header end*/
-
 
 
 /*home start*/
@@ -538,15 +542,7 @@ section {
 
 /*social start*/
 
-.social {
-    /* background-color: var(--black-color); */
-}
-
-.social:hover {
-    /* opacity: 1; */
-}
-
-.social div {
+.social div { 
     border-radius: 30rem;
     position: fixed;
     top: 33%;
@@ -569,7 +565,7 @@ section {
 
 .social a:hover {
     font-size: 2.3rem;
-    /* opacity: 1; */
+    transform: rotate(-15deg);
 }
 
 /*social end*/
