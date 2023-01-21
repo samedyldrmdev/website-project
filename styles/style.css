@@ -131,9 +131,9 @@ section {
     padding: 0 0 0 2rem;
 }
 
-.header .logo img {
+.header #logo {
     width: 10rem;
-    fill: var(--main-color);
+    fill: black;
 }
 
 .header {
