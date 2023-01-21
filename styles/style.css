@@ -131,9 +131,12 @@ section {
     padding: 0 0 0 2rem;
 }
 
-.header #logo {
+.header a img {
     width: 10rem;
-    fill: black;
+}
+
+.header a img:hover {
+    transform: rotate(-10deg);
 }
 
 .header {
