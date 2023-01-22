@@ -607,33 +607,33 @@ section {
 
 /*logo referans start*/
 
-.logo-referans{
+.referans{
     text-align: center;
 }
 
-.logo-referans .referans h1,
-.logo-referans .referans h2{
+.referans h1,
+.referans h2{
     color: white;
     text-align: center;
 }
 
-.logo-referans .referans h1{
+.referans h1{
     font-size: 4rem;
 }
 
-.logo-referans .referans h2{
+.referans h2{
     font-size: 2rem;
     padding-bottom: 2rem;
 }
 
 
-.logo-referans .referans div{
+.referans .logo  div{
     border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-.logo-referans .referans img{
+.referans .logo  img{
     width: 20rem;
     background-color: white;
     border: 1px solid;
@@ -644,13 +644,27 @@ section {
     cursor: pointer;
 }
 
-.logo-referans .referans img:hover{
+.referans .logo  img:hover{
     opacity: 1;
     fill: white;
     background-color: rgb(250, 249, 249);
 }
 
 /*logo referans end*/
+
+/*kartvizit referans start*/
+
+.referans .kartvizit{
+    background-color: none;
+}
+.referans .kartvizit img{
+    margin: 0;
+    padding: 0;
+    width: 50rem;
+
+}
+
+/*kartvizit referans end*/
 
 
 /*responsive start*/
