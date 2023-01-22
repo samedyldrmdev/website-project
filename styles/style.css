@@ -605,18 +605,52 @@ section {
 
 /*social end*/
 
+/*logo referans start*/
 
-/* background-color: white;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 7%;
-margin: 2rem 7%;
-border-radius: 30rem;
-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
-position: sticky;
-top: 1rem;
-z-index: 1000; */
+.logo-referans{
+    text-align: center;
+}
+
+.logo-referans .referans h1,
+.logo-referans .referans h2{
+    color: white;
+    text-align: center;
+}
+
+.logo-referans .referans h1{
+    font-size: 4rem;
+}
+
+.logo-referans .referans h2{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.logo-referans .referans div{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.logo-referans .referans img{
+    width: 20rem;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 0.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.logo-referans .referans img:hover{
+    opacity: 1;
+    fill: white;
+    background-color: rgb(250, 249, 249);
+}
+
+/*logo referans end*/
 
 
 /*responsive start*/
@@ -682,17 +716,6 @@ z-index: 1000; */
 }
 
 /*responsive end*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
