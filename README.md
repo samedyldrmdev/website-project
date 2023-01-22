@@ -28,6 +28,6 @@ Herhangi bir ek bilgi buraya gelir
 
 ## Ekran Görüntüleri
 
-<img src="https://i.hizliresim.com/9v2tmq4.png" alt="drawing" width="1080"/>
+<img src="https://i.hizliresim.com/1dojipy.png" alt="drawing" width="1080"/>
 
   
