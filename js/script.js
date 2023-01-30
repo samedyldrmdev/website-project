@@ -116,3 +116,16 @@ headings.forEach(heading => {
     targetSection.style.display = "block";
   });
 });
+
+
+console.log("Hello world!")
+
+const helloWorld = "const"
+// helloWorld = "değiştirildi."
+console.log(helloWorld)
+
+console.log(typeof 5)
+console.log(typeof "javascript")
+console.log(typeof false)
+console.log(typeof undefined)
+console.log(typeof 5,5)
